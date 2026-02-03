@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
+import CountUpStat from "@/components/CountUpStat";
 import { ArrowRight, CheckCircle, Play, Users, TrendingUp, Award, Zap, Target, BarChart3 } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
@@ -118,10 +119,7 @@ const Index = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
-              <div key={index} className="text-center">
-                <p className="text-3xl md:text-4xl font-bold text-navy mb-1">{stat.value}</p>
-                <p className="text-muted-foreground text-sm">{stat.label}</p>
-              </div>
+              <CountUpStat key={index} value={stat.value} label={stat.label} />
             ))}
           </div>
         </div>
