@@ -12,10 +12,10 @@ const achievements = [
 ];
 
 const credentials = [
+  { icon: Briefcase, text: "Currently Managing $2M+/month in Ad Spend" },
   { icon: Award, text: "Google Certified Digital Marketing Professional" },
-  { icon: Briefcase, text: "Former Head of Marketing at Fortune 500 Company" },
-  { icon: GraduationCap, text: "MBA from Harvard Business School" },
   { icon: Users, text: "Featured speaker at 50+ international conferences" },
+  { icon: GraduationCap, text: "Former Head of Marketing at Fortune 500 Company" },
 ];
 
 const testimonials = [
@@ -86,8 +86,9 @@ const Instructor = () => {
               
               <p className="text-lg text-primary-foreground/80 mb-8 leading-relaxed">
                 Marcus is a digital marketing veteran with 15+ years of experience scaling 
-                brands from startups to Fortune 500 companies. He's generated over $50 million 
-                in revenue for his clients and trained thousands of marketers worldwide.
+                brands from startups to Fortune 500 companies. <strong className="text-gold">Currently managing $2M+/month in ad spend</strong> for 
+                clients across e-commerce, SaaS, and local businesses. He's generated over $50 million 
+                in revenue and trained thousands of marketers worldwide.
               </p>
 
               <div className="flex gap-4 mb-8">

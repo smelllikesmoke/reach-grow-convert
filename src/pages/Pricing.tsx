@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
+import CountdownTimer from "@/components/CountdownTimer";
 import { ArrowRight, Check, Zap, Crown, Star, Clock, Shield, Users, Award } from "lucide-react";
 
 const plans = [
@@ -109,10 +110,11 @@ const Pricing = () => {
             and money-back guarantee.
           </p>
 
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-navy-light/30 text-primary-foreground/80 text-sm">
-            <Clock className="w-4 h-4" />
-            <span>Offer expires in 48 hours — Only 23 seats left</span>
-          </div>
+          {/* Countdown Timer */}
+          <CountdownTimer 
+            targetDate={new Date("2026-02-10T23:59:59")} 
+            label="Offer ends February 10, 2026:"
+          />
         </div>
       </section>
 
