@@ -95,9 +95,9 @@ const Pricing = () => {
       {/* Hero Section */}
       <section className="bg-gradient-hero section-padding">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold/10 border border-gold/30 mb-6">
-            <Zap className="w-4 h-4 text-gold" />
-            <span className="text-gold text-sm font-medium">Limited Time: 40% Off All Plans</span>
+          <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-secondary text-primary font-semibold shadow-lg shadow-secondary/40 mb-6 animate-pulse-slow">
+            <Zap className="w-5 h-5" />
+            <span className="text-sm">🔥 Limited Time: 40% Off All Plans</span>
           </div>
           
           <h1 className="text-4xl sm:text-5xl font-bold text-primary-foreground mb-6">
