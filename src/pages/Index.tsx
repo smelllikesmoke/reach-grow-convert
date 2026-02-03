@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
 import CountUpStat from "@/components/CountUpStat";
 import { ArrowRight, CheckCircle, Play, Users, TrendingUp, Award, Zap, Target, BarChart3 } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+import introVideo from "@/assets/intro-video.mp4";
 
 const stats = [
   { value: "10,000+", label: "Students Enrolled" },
@@ -100,17 +100,15 @@ const Index = () => {
 
             {/* Right - Video Box */}
             <div className="relative animate-fade-in">
-              <div className="aspect-video rounded-2xl bg-card/10 border border-white/10 overflow-hidden shadow-2xl backdrop-blur-sm">
-                {/* Video Placeholder */}
-                <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-primary/50 to-primary/80">
-                  <div className="text-center">
-                    <div className="w-20 h-20 rounded-full bg-secondary flex items-center justify-center mx-auto mb-4 cursor-pointer hover:scale-110 transition-transform shadow-lg">
-                      <Play className="w-8 h-8 text-primary ml-1" fill="currentColor" />
-                    </div>
-                    <p className="text-primary-foreground font-medium">Watch Demo Video</p>
-                    <p className="text-primary-foreground/60 text-sm">2 min introduction</p>
-                  </div>
-                </div>
+              <div className="aspect-video rounded-2xl bg-card/10 border border-white/10 overflow-hidden shadow-2xl">
+                <video
+                  src={introVideo}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-full object-cover"
+                />
               </div>
               
               {/* Floating Badge */}
