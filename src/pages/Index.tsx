@@ -54,7 +54,7 @@ const Index = () => {
         />
         
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-navy-dark/90 via-navy/80 to-navy-dark/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[hsl(222,55%,8%)]/90 via-[hsl(222,47%,14%)]/80 to-[hsl(222,55%,8%)]/70" />
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl">
