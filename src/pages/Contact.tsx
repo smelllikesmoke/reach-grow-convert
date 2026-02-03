@@ -11,18 +11,21 @@ const contactInfo = [
     icon: Mail,
     title: "Email Us",
     value: "hello@digitalmastery.com",
+    href: "mailto:hello@digitalmastery.com",
     description: "We'll respond within 24 hours",
   },
   {
     icon: Phone,
     title: "Call Us",
     value: "+1 (555) 123-4567",
+    href: "tel:+15551234567",
     description: "Mon-Fri, 9am-6pm EST",
   },
   {
     icon: MapPin,
     title: "Visit Us",
     value: "123 Marketing Street",
+    href: "https://www.google.com/maps/search/?api=1&query=123+Marketing+Street+San+Francisco+CA",
     description: "San Francisco, CA 94102",
   },
 ];
@@ -213,9 +216,12 @@ const Contact = () => {
 
               <div className="space-y-6 mb-12">
                 {contactInfo.map((info, index) => (
-                  <div
+                  <a
                     key={index}
-                    className="flex items-start gap-4 p-6 rounded-xl bg-muted border border-border"
+                    href={info.href}
+                    target={info.href.startsWith("http") ? "_blank" : undefined}
+                    rel={info.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                    className="flex items-start gap-4 p-6 rounded-xl bg-muted border border-border hover:border-gold/50 hover:shadow-card transition-all duration-300 block"
                   >
                     <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-gold to-gold-light flex items-center justify-center shrink-0">
                       <info.icon className="w-6 h-6 text-navy-dark" />
@@ -225,7 +231,7 @@ const Contact = () => {
                       <p className="text-foreground font-medium">{info.value}</p>
                       <p className="text-muted-foreground text-sm">{info.description}</p>
                     </div>
-                  </div>
+                  </a>
                 ))}
               </div>
 

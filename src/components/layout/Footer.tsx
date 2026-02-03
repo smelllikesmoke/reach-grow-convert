@@ -17,16 +17,16 @@ const Footer = () => {
               Join 10,000+ students who've launched successful careers.
             </p>
             <div className="flex gap-3">
-              <a href="https://www.linkedin.com/company/hubspot" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-navy-light/50 flex items-center justify-center hover:bg-gold hover:text-navy-dark transition-colors">
+              <a href="https://www.linkedin.com/company/google" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-navy-light/50 flex items-center justify-center hover:bg-gold hover:text-navy-dark transition-colors">
                 <Linkedin size={18} />
               </a>
-              <a href="https://twitter.com/hubspot" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-navy-light/50 flex items-center justify-center hover:bg-gold hover:text-navy-dark transition-colors">
+              <a href="https://twitter.com/GoogleAds" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-navy-light/50 flex items-center justify-center hover:bg-gold hover:text-navy-dark transition-colors">
                 <Twitter size={18} />
               </a>
-              <a href="https://www.instagram.com/hubspot" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-navy-light/50 flex items-center justify-center hover:bg-gold hover:text-navy-dark transition-colors">
+              <a href="https://www.instagram.com/instagramforbusiness" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-navy-light/50 flex items-center justify-center hover:bg-gold hover:text-navy-dark transition-colors">
                 <Instagram size={18} />
               </a>
-              <a href="https://www.youtube.com/@HubSpot" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-navy-light/50 flex items-center justify-center hover:bg-gold hover:text-navy-dark transition-colors">
+              <a href="https://www.youtube.com/@GoogleMarketingPlatform" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-navy-light/50 flex items-center justify-center hover:bg-gold hover:text-navy-dark transition-colors">
                 <Youtube size={18} />
               </a>
             </div>
@@ -62,15 +62,15 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <Mail size={18} className="text-gold mt-0.5 shrink-0" />
-                <span className="text-primary-foreground/70 text-sm">hello@digitalmastery.com</span>
+                <a href="mailto:hello@digitalmastery.com" className="text-primary-foreground/70 hover:text-gold transition-colors text-sm">hello@digitalmastery.com</a>
               </li>
               <li className="flex items-start gap-3">
                 <Phone size={18} className="text-gold mt-0.5 shrink-0" />
-                <span className="text-primary-foreground/70 text-sm">+1 (555) 123-4567</span>
+                <a href="tel:+15551234567" className="text-primary-foreground/70 hover:text-gold transition-colors text-sm">+1 (555) 123-4567</a>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="text-gold mt-0.5 shrink-0" />
-                <span className="text-primary-foreground/70 text-sm">123 Marketing Street,<br />San Francisco, CA 94102</span>
+                <a href="https://www.google.com/maps/search/?api=1&query=123+Marketing+Street+San+Francisco+CA" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/70 hover:text-gold transition-colors text-sm">123 Marketing Street,<br />San Francisco, CA 94102</a>
               </li>
             </ul>
           </div>
@@ -81,8 +81,8 @@ const Footer = () => {
             © 2024 DigitalMastery. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <a href="#" className="text-primary-foreground/50 hover:text-gold transition-colors text-sm">Privacy Policy</a>
-            <a href="#" className="text-primary-foreground/50 hover:text-gold transition-colors text-sm">Terms of Service</a>
+            <a href="https://www.privacypolicies.com/live/placeholder" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/50 hover:text-gold transition-colors text-sm">Privacy Policy</a>
+            <a href="https://www.termsofservicegenerator.net/live/placeholder" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/50 hover:text-gold transition-colors text-sm">Terms of Service</a>
           </div>
         </div>
       </div>
