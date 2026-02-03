@@ -59,47 +59,47 @@ const Index = () => {
               </div>
               
               {/* Headline - Swapped for stronger benefit */}
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-in">
+              <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-4 sm:mb-6 animate-fade-in">
                 Get Job-Ready in{" "}
                 <span className="text-gradient-gold">12 Weeks</span>
               </h1>
               
               {/* Subheadline */}
-              <p className="text-lg sm:text-xl text-primary-foreground/80 mb-8 leading-relaxed animate-fade-in">
+              <p className="text-base sm:text-lg lg:text-xl text-primary-foreground/80 mb-6 sm:mb-8 leading-relaxed animate-fade-in">
                 Master Digital Marketing & 10x Your Career. Join 10,000+ students who transformed 
                 their careers with our comprehensive, project-based program.
               </p>
               
               {/* Dual CTA */}
-              <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-slide-up">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 sm:mb-12 animate-slide-up">
                 <Link to="/pricing">
-                  <Button variant="hero" size="xl" className="group w-full sm:w-auto">
+                  <Button variant="hero" size="lg" className="group w-full sm:w-auto text-sm sm:text-base">
                     Enroll Now — Save 40%
-                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </Link>
                 <Link to="/course">
-                  <Button variant="heroOutline" size="xl" className="w-full sm:w-auto">
+                  <Button variant="heroOutline" size="lg" className="w-full sm:w-auto text-sm sm:text-base">
                     View Curriculum
                   </Button>
                 </Link>
               </div>
               
               {/* Social Proof */}
-              <div className="flex items-center gap-4 animate-fade-in">
-                <div className="flex -space-x-3">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 animate-fade-in">
+                <div className="flex -space-x-2 sm:-space-x-3">
                   {[1, 2, 3, 4, 5].map((i) => (
                     <div
                       key={i}
-                      className="w-10 h-10 rounded-full border-2 border-primary bg-gradient-to-br from-secondary/80 to-secondary flex items-center justify-center"
+                      className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-primary bg-gradient-to-br from-secondary/80 to-secondary flex items-center justify-center"
                     >
-                      <Users className="w-4 h-4 text-primary" />
+                      <Users className="w-3 h-3 sm:w-4 sm:h-4 text-primary" />
                     </div>
                   ))}
                 </div>
                 <div>
-                  <p className="text-primary-foreground font-semibold">1,200+ enrolled this month</p>
-                  <p className="text-primary-foreground/60 text-sm">Join the community today</p>
+                  <p className="text-primary-foreground font-semibold text-sm sm:text-base">1,200+ enrolled this month</p>
+                  <p className="text-primary-foreground/60 text-xs sm:text-sm">Join the community today</p>
                 </div>
               </div>
             </div>
