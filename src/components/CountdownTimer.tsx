@@ -44,12 +44,12 @@ const CountdownTimer = ({ targetDate, label = "Offer ends in:", className = "" }
 
   const TimeBlock = ({ value, label }: { value: number; label: string }) => (
     <div className="flex flex-col items-center">
-      <div className="bg-navy-light/50 rounded-lg px-3 py-2 min-w-[48px] text-center border border-gold/20">
-        <span className="text-xl sm:text-2xl font-bold text-gold tabular-nums">
+      <div className="bg-navy-light/50 rounded-lg px-2 sm:px-3 py-1.5 sm:py-2 min-w-[40px] sm:min-w-[48px] text-center border border-gold/20">
+        <span className="text-lg sm:text-2xl font-bold text-gold tabular-nums">
           {value.toString().padStart(2, "0")}
         </span>
       </div>
-      <span className="text-[10px] sm:text-xs text-primary-foreground/60 mt-1 uppercase tracking-wide">
+      <span className="text-[9px] sm:text-xs text-primary-foreground/60 mt-1 uppercase tracking-wide">
         {label}
       </span>
     </div>
@@ -57,17 +57,17 @@ const CountdownTimer = ({ targetDate, label = "Offer ends in:", className = "" }
 
   return (
     <div className={`flex flex-col items-center ${className}`}>
-      <div className="flex items-center gap-2 mb-3">
+      <div className="flex items-center gap-2 mb-2 sm:mb-3">
         <Clock className="w-4 h-4 text-gold" />
-        <span className="text-primary-foreground/80 text-sm font-medium">{label}</span>
+        <span className="text-primary-foreground/80 text-xs sm:text-sm font-medium">{label}</span>
       </div>
-      <div className="flex items-center gap-2 sm:gap-3">
+      <div className="flex items-center gap-1.5 sm:gap-3">
         <TimeBlock value={timeLeft.days} label="Days" />
-        <span className="text-gold text-xl font-bold">:</span>
+        <span className="text-gold text-lg sm:text-xl font-bold">:</span>
         <TimeBlock value={timeLeft.hours} label="Hours" />
-        <span className="text-gold text-xl font-bold">:</span>
+        <span className="text-gold text-lg sm:text-xl font-bold">:</span>
         <TimeBlock value={timeLeft.minutes} label="Mins" />
-        <span className="text-gold text-xl font-bold">:</span>
+        <span className="text-gold text-lg sm:text-xl font-bold">:</span>
         <TimeBlock value={timeLeft.seconds} label="Secs" />
       </div>
     </div>

@@ -125,9 +125,9 @@ const Pricing = () => {
             {plans.map((plan, index) => (
               <div
                 key={index}
-                className={`relative rounded-2xl p-8 ${
+                className={`relative rounded-2xl p-6 sm:p-8 ${
                   plan.popular
-                    ? "bg-navy text-primary-foreground border-2 border-gold shadow-gold scale-105"
+                    ? "bg-navy text-primary-foreground border-2 border-gold shadow-gold md:scale-105"
                     : "bg-card border border-border"
                 }`}
               >
