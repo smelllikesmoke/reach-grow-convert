@@ -43,10 +43,10 @@ const Index = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center bg-gradient-hero overflow-hidden">
+      <section className="relative min-h-[90vh] flex items-center bg-primary overflow-hidden">
         {/* Background Image */}
         <div 
-          className="absolute inset-0 opacity-20"
+          className="absolute inset-0 opacity-30"
           style={{
             backgroundImage: `url(${heroBg})`,
             backgroundSize: 'cover',
@@ -55,59 +55,83 @@ const Index = () => {
         />
         
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[hsl(222,55%,8%)] via-[hsl(222,47%,14%)]/95 to-[hsl(222,55%,8%)]/90" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/85 to-primary/70" />
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-3xl">
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold/10 border border-gold/30 mb-6 animate-fade-in">
-              <Zap className="w-4 h-4 text-gold" />
-              <span className="text-gold text-sm font-medium">Limited Time: 40% Off Enrollment</span>
-            </div>
-            
-            {/* Headline */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-in">
-              Master Digital Marketing &{" "}
-              <span className="text-gradient-gold">10x Your Career</span>
-            </h1>
-            
-            {/* Subheadline */}
-            <p className="text-lg sm:text-xl text-primary-foreground/80 mb-8 leading-relaxed max-w-2xl animate-fade-in">
-              Join 10,000+ students who transformed their careers with our comprehensive, 
-              project-based digital marketing program. Get job-ready in just 12 weeks.
-            </p>
-            
-            {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-slide-up">
-              <Link to="/pricing">
-                <Button variant="hero" size="xl" className="group">
-                  Enroll Now — Save 40%
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </Button>
-              </Link>
-              <Link to="/course">
-                <Button variant="heroOutline" size="xl" className="group">
-                  <Play className="w-5 h-5" />
-                  Watch Free Demo
-                </Button>
-              </Link>
-            </div>
-            
-            {/* Social Proof */}
-            <div className="flex items-center gap-4 animate-fade-in">
-              <div className="flex -space-x-3">
-                {[1, 2, 3, 4, 5].map((i) => (
-                  <div
-                    key={i}
-                    className="w-10 h-10 rounded-full border-2 border-navy-dark bg-gradient-to-br from-gold/80 to-gold-dark flex items-center justify-center"
-                  >
-                    <Users className="w-4 h-4 text-navy-dark" />
-                  </div>
-                ))}
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Content */}
+            <div>
+              {/* Badge */}
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 border border-secondary/30 mb-6 animate-fade-in">
+                <Zap className="w-4 h-4 text-secondary" />
+                <span className="text-secondary text-sm font-medium">Limited Time: 40% Off Enrollment</span>
               </div>
-              <div>
-                <p className="text-primary-foreground font-semibold">1,200+ enrolled this month</p>
-                <p className="text-primary-foreground/60 text-sm">Join the community today</p>
+              
+              {/* Headline */}
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-in">
+                Master Digital Marketing &{" "}
+                <span className="text-gradient-gold">10x Your Career</span>
+              </h1>
+              
+              {/* Subheadline */}
+              <p className="text-lg sm:text-xl text-primary-foreground/80 mb-8 leading-relaxed animate-fade-in">
+                Join 10,000+ students who transformed their careers with our comprehensive, 
+                project-based digital marketing program. Get job-ready in just 12 weeks.
+              </p>
+              
+              {/* CTA */}
+              <div className="mb-12 animate-slide-up">
+                <Link to="/pricing">
+                  <Button variant="hero" size="xl" className="group">
+                    Enroll Now — Save 40%
+                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                </Link>
+              </div>
+              
+              {/* Social Proof */}
+              <div className="flex items-center gap-4 animate-fade-in">
+                <div className="flex -space-x-3">
+                  {[1, 2, 3, 4, 5].map((i) => (
+                    <div
+                      key={i}
+                      className="w-10 h-10 rounded-full border-2 border-primary bg-gradient-to-br from-secondary/80 to-secondary flex items-center justify-center"
+                    >
+                      <Users className="w-4 h-4 text-primary" />
+                    </div>
+                  ))}
+                </div>
+                <div>
+                  <p className="text-primary-foreground font-semibold">1,200+ enrolled this month</p>
+                  <p className="text-primary-foreground/60 text-sm">Join the community today</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Right - Video Box */}
+            <div className="relative animate-fade-in">
+              <div className="aspect-video rounded-2xl bg-card/10 border border-white/10 overflow-hidden shadow-2xl backdrop-blur-sm">
+                {/* Video Placeholder */}
+                <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-primary/50 to-primary/80">
+                  <div className="text-center">
+                    <div className="w-20 h-20 rounded-full bg-secondary flex items-center justify-center mx-auto mb-4 cursor-pointer hover:scale-110 transition-transform shadow-lg">
+                      <Play className="w-8 h-8 text-primary ml-1" fill="currentColor" />
+                    </div>
+                    <p className="text-primary-foreground font-medium">Watch Demo Video</p>
+                    <p className="text-primary-foreground/60 text-sm">2 min introduction</p>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Floating Badge */}
+              <div className="absolute -bottom-4 -left-4 bg-card rounded-xl p-4 shadow-lg border border-border animate-float">
+                <div className="flex items-center gap-3">
+                  <Award className="w-8 h-8 text-secondary" />
+                  <div>
+                    <p className="font-semibold text-foreground text-sm">Certificate Included</p>
+                    <p className="text-muted-foreground text-xs">Industry recognized</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
