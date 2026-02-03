@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center">
-              <img src={logo} alt="DigitalMastery" className="h-12 w-auto" />
+              <img src={logo} alt="DigitalMastery" className="h-14 w-auto" />
             </Link>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
               Transform your career with industry-leading digital marketing skills. 

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
 import CountUpStat from "@/components/CountUpStat";
-import { ArrowRight, CheckCircle, Play, Users, TrendingUp, Award, Zap, Target, BarChart3 } from "lucide-react";
+import { ArrowRight, CheckCircle, Users, TrendingUp, Award, Zap, Target, BarChart3 } from "lucide-react";
 import introVideo from "@/assets/intro-video.mp4";
 
 const stats = [
@@ -169,50 +169,31 @@ const Index = () => {
       {/* What You'll Learn Section */}
       <section className="section-padding bg-navy">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-primary-foreground mb-6">
-                Everything You Need to{" "}
-                <span className="text-gradient-gold">Succeed</span>
-              </h2>
-              <p className="text-primary-foreground/80 text-lg mb-8 leading-relaxed">
-                Our comprehensive curriculum covers every aspect of digital marketing. 
-                No prior experience needed — we'll take you from beginner to expert.
-              </p>
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl sm:text-4xl font-bold text-primary-foreground mb-6">
+              Everything You Need to{" "}
+              <span className="text-gradient-gold">Succeed</span>
+            </h2>
+            <p className="text-primary-foreground/80 text-lg mb-10 leading-relaxed">
+              Our comprehensive curriculum covers every aspect of digital marketing. 
+              No prior experience needed — we'll take you from beginner to expert.
+            </p>
 
-              <div className="grid sm:grid-cols-2 gap-4 mb-8">
-                {features.map((feature, index) => (
-                  <div key={index} className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 text-gold shrink-0" />
-                    <span className="text-primary-foreground/90">{feature}</span>
-                  </div>
-                ))}
-              </div>
-
-              <Link to="/course">
-                <Button variant="gold" size="lg" className="group">
-                  View Full Curriculum
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </Button>
-              </Link>
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 mb-10">
+              {features.map((feature, index) => (
+                <div key={index} className="flex items-center gap-3 bg-navy-light/30 rounded-lg px-4 py-3">
+                  <CheckCircle className="w-5 h-5 text-gold shrink-0" />
+                  <span className="text-primary-foreground/90 text-sm">{feature}</span>
+                </div>
+              ))}
             </div>
 
-            <div className="relative">
-              <div className="aspect-video rounded-2xl bg-navy-light/50 border border-navy-light flex items-center justify-center group cursor-pointer hover:border-gold/50 transition-colors">
-                <div className="w-20 h-20 rounded-full bg-gradient-to-br from-gold to-gold-light flex items-center justify-center group-hover:scale-110 transition-transform shadow-gold">
-                  <Play className="w-8 h-8 text-navy-dark ml-1" />
-                </div>
-              </div>
-              <div className="absolute -bottom-6 -right-6 bg-card rounded-xl p-4 shadow-card border border-border">
-                <div className="flex items-center gap-3">
-                  <Award className="w-8 h-8 text-gold" />
-                  <div>
-                    <p className="font-semibold text-foreground">Certificate Included</p>
-                    <p className="text-muted-foreground text-sm">Industry recognized</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <Link to="/course">
+              <Button variant="gold" size="lg" className="group">
+                View Full Curriculum
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
