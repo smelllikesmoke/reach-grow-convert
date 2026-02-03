@@ -92,10 +92,10 @@ const Instructor = () => {
               </p>
 
               <div className="flex gap-4 mb-8">
-                <a href="https://www.linkedin.com/in/neilpatel" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-xl bg-navy-light/50 flex items-center justify-center hover:bg-gold hover:text-navy-dark transition-colors text-primary-foreground">
+                <a href="https://www.linkedin.com/in/williamhgates" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-xl bg-navy-light/50 flex items-center justify-center hover:bg-gold hover:text-navy-dark transition-colors text-primary-foreground">
                   <Linkedin size={20} />
                 </a>
-                <a href="https://twitter.com/neilpatel" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-xl bg-navy-light/50 flex items-center justify-center hover:bg-gold hover:text-navy-dark transition-colors text-primary-foreground">
+                <a href="https://twitter.com/GoogleAds" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-xl bg-navy-light/50 flex items-center justify-center hover:bg-gold hover:text-navy-dark transition-colors text-primary-foreground">
                   <Twitter size={20} />
                 </a>
               </div>
