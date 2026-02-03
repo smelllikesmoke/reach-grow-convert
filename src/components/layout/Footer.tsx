@@ -1,0 +1,95 @@
+import { Link } from "react-router-dom";
+import { Mail, Phone, MapPin, Linkedin, Twitter, Instagram, Youtube } from "lucide-react";
+
+const Footer = () => {
+  return (
+    <footer className="bg-navy text-primary-foreground">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+          {/* Brand */}
+          <div className="space-y-4">
+            <Link to="/" className="flex items-center gap-2">
+              <div className="w-10 h-10 rounded-lg bg-gradient-gold flex items-center justify-center">
+                <span className="text-navy-dark font-bold text-xl">D</span>
+              </div>
+              <span className="font-bold text-xl">DigitalMastery</span>
+            </Link>
+            <p className="text-primary-foreground/70 text-sm leading-relaxed">
+              Transform your career with industry-leading digital marketing skills. 
+              Join 10,000+ students who've launched successful careers.
+            </p>
+            <div className="flex gap-3">
+              <a href="#" className="w-10 h-10 rounded-lg bg-navy-light/50 flex items-center justify-center hover:bg-gold hover:text-navy-dark transition-colors">
+                <Linkedin size={18} />
+              </a>
+              <a href="#" className="w-10 h-10 rounded-lg bg-navy-light/50 flex items-center justify-center hover:bg-gold hover:text-navy-dark transition-colors">
+                <Twitter size={18} />
+              </a>
+              <a href="#" className="w-10 h-10 rounded-lg bg-navy-light/50 flex items-center justify-center hover:bg-gold hover:text-navy-dark transition-colors">
+                <Instagram size={18} />
+              </a>
+              <a href="#" className="w-10 h-10 rounded-lg bg-navy-light/50 flex items-center justify-center hover:bg-gold hover:text-navy-dark transition-colors">
+                <Youtube size={18} />
+              </a>
+            </div>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h4 className="font-semibold text-lg mb-4">Quick Links</h4>
+            <ul className="space-y-3">
+              <li><Link to="/" className="text-primary-foreground/70 hover:text-gold transition-colors text-sm">Home</Link></li>
+              <li><Link to="/course" className="text-primary-foreground/70 hover:text-gold transition-colors text-sm">Course Overview</Link></li>
+              <li><Link to="/instructor" className="text-primary-foreground/70 hover:text-gold transition-colors text-sm">Instructor</Link></li>
+              <li><Link to="/pricing" className="text-primary-foreground/70 hover:text-gold transition-colors text-sm">Pricing</Link></li>
+              <li><Link to="/contact" className="text-primary-foreground/70 hover:text-gold transition-colors text-sm">Contact</Link></li>
+            </ul>
+          </div>
+
+          {/* Course Modules */}
+          <div>
+            <h4 className="font-semibold text-lg mb-4">Learn</h4>
+            <ul className="space-y-3">
+              <li><a href="#" className="text-primary-foreground/70 hover:text-gold transition-colors text-sm">SEO Mastery</a></li>
+              <li><a href="#" className="text-primary-foreground/70 hover:text-gold transition-colors text-sm">Social Media Marketing</a></li>
+              <li><a href="#" className="text-primary-foreground/70 hover:text-gold transition-colors text-sm">Google & Meta Ads</a></li>
+              <li><a href="#" className="text-primary-foreground/70 hover:text-gold transition-colors text-sm">Content Marketing</a></li>
+              <li><a href="#" className="text-primary-foreground/70 hover:text-gold transition-colors text-sm">Email Marketing</a></li>
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h4 className="font-semibold text-lg mb-4">Contact</h4>
+            <ul className="space-y-4">
+              <li className="flex items-start gap-3">
+                <Mail size={18} className="text-gold mt-0.5 shrink-0" />
+                <span className="text-primary-foreground/70 text-sm">hello@digitalmastery.com</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Phone size={18} className="text-gold mt-0.5 shrink-0" />
+                <span className="text-primary-foreground/70 text-sm">+1 (555) 123-4567</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <MapPin size={18} className="text-gold mt-0.5 shrink-0" />
+                <span className="text-primary-foreground/70 text-sm">123 Marketing Street,<br />San Francisco, CA 94102</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="border-t border-navy-light/30 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-primary-foreground/50 text-sm">
+            © 2024 DigitalMastery. All rights reserved.
+          </p>
+          <div className="flex gap-6">
+            <a href="#" className="text-primary-foreground/50 hover:text-gold transition-colors text-sm">Privacy Policy</a>
+            <a href="#" className="text-primary-foreground/50 hover:text-gold transition-colors text-sm">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
