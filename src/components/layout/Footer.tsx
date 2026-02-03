@@ -17,16 +17,16 @@ const Footer = () => {
               Join 10,000+ students who've launched successful careers.
             </p>
             <div className="flex gap-3">
-              <a href="#" className="w-10 h-10 rounded-lg bg-navy-light/50 flex items-center justify-center hover:bg-gold hover:text-navy-dark transition-colors">
+              <a href="https://www.linkedin.com/company/hubspot" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-navy-light/50 flex items-center justify-center hover:bg-gold hover:text-navy-dark transition-colors">
                 <Linkedin size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-lg bg-navy-light/50 flex items-center justify-center hover:bg-gold hover:text-navy-dark transition-colors">
+              <a href="https://twitter.com/hubspot" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-navy-light/50 flex items-center justify-center hover:bg-gold hover:text-navy-dark transition-colors">
                 <Twitter size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-lg bg-navy-light/50 flex items-center justify-center hover:bg-gold hover:text-navy-dark transition-colors">
+              <a href="https://www.instagram.com/hubspot" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-navy-light/50 flex items-center justify-center hover:bg-gold hover:text-navy-dark transition-colors">
                 <Instagram size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-lg bg-navy-light/50 flex items-center justify-center hover:bg-gold hover:text-navy-dark transition-colors">
+              <a href="https://www.youtube.com/@HubSpot" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-navy-light/50 flex items-center justify-center hover:bg-gold hover:text-navy-dark transition-colors">
                 <Youtube size={18} />
               </a>
             </div>
