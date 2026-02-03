@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
 import CountUpStat from "@/components/CountUpStat";
-import { ArrowRight, CheckCircle, Users, TrendingUp, Award, Zap, Target, BarChart3 } from "lucide-react";
+import ToolLogos from "@/components/ToolLogos";
+import { ArrowRight, CheckCircle, Users, TrendingUp, Award, Zap, Target, BarChart3, Download } from "lucide-react";
 import introVideo from "@/assets/intro-video.mp4";
 
 const stats = [
@@ -57,24 +58,29 @@ const Index = () => {
                 <span className="text-secondary text-sm font-medium">Limited Time: 40% Off Enrollment</span>
               </div>
               
-              {/* Headline */}
+              {/* Headline - Swapped for stronger benefit */}
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-in">
-                Master Digital Marketing &{" "}
-                <span className="text-gradient-gold">10x Your Career</span>
+                Get Job-Ready in{" "}
+                <span className="text-gradient-gold">12 Weeks</span>
               </h1>
               
               {/* Subheadline */}
               <p className="text-lg sm:text-xl text-primary-foreground/80 mb-8 leading-relaxed animate-fade-in">
-                Join 10,000+ students who transformed their careers with our comprehensive, 
-                project-based digital marketing program. Get job-ready in just 12 weeks.
+                Master Digital Marketing & 10x Your Career. Join 10,000+ students who transformed 
+                their careers with our comprehensive, project-based program.
               </p>
               
-              {/* CTA */}
-              <div className="mb-12 animate-slide-up">
+              {/* Dual CTA */}
+              <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-slide-up">
                 <Link to="/pricing">
-                  <Button variant="hero" size="xl" className="group">
+                  <Button variant="hero" size="xl" className="group w-full sm:w-auto">
                     Enroll Now — Save 40%
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                </Link>
+                <Link to="/course">
+                  <Button variant="heroOutline" size="xl" className="w-full sm:w-auto">
+                    View Curriculum
                   </Button>
                 </Link>
               </div>
@@ -188,12 +194,23 @@ const Index = () => {
               ))}
             </div>
 
-            <Link to="/course">
-              <Button variant="gold" size="lg" className="group">
-                View Full Curriculum
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            {/* Tool Logos */}
+            <div className="mb-10 pt-8 border-t border-navy-light/30">
+              <ToolLogos variant="dark" />
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link to="/course">
+                <Button variant="gold" size="lg" className="group">
+                  View Full Curriculum
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
+              <Button variant="heroOutline" size="lg" className="group">
+                <Download className="w-5 h-5" />
+                Download Free Syllabus
               </Button>
-            </Link>
+            </div>
           </div>
         </div>
       </section>

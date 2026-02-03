@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
-import { ArrowRight, Clock, Users, Award, BookOpen, Target, BarChart3, Mail, Share2, Search, Megaphone, PenTool, CheckCircle } from "lucide-react";
+import ToolLogos from "@/components/ToolLogos";
+import { ArrowRight, Clock, Users, Award, BookOpen, Target, BarChart3, Mail, Share2, Search, Megaphone, PenTool, CheckCircle, XCircle, Download } from "lucide-react";
 
 const modules = [
   {
@@ -80,6 +81,13 @@ const targetAudience = [
   },
 ];
 
+const notForAudience = [
+  "Looking for get-rich-quick schemes — this requires real work",
+  "Unable to commit 5-10 hours per week to learning",
+  "Expecting results without putting in the effort",
+  "Already an experienced marketer with 5+ years experience",
+];
+
 const Course = () => {
   return (
     <Layout>
@@ -102,7 +110,7 @@ const Course = () => {
               you need to become a complete digital marketer in just 12 weeks.
             </p>
 
-            <div className="flex flex-wrap justify-center gap-6 text-primary-foreground/80">
+            <div className="flex flex-wrap justify-center gap-6 text-primary-foreground/80 mb-8">
               <div className="flex items-center gap-2">
                 <Clock className="w-5 h-5 text-gold" />
                 <span>50+ Hours</span>
@@ -120,6 +128,12 @@ const Course = () => {
                 <span>Community Access</span>
               </div>
             </div>
+
+            {/* Syllabus Download CTA */}
+            <Button variant="heroOutline" size="lg" className="group">
+              <Download className="w-5 h-5" />
+              Download Free Syllabus (PDF)
+            </Button>
           </div>
         </div>
       </section>
@@ -168,8 +182,15 @@ const Course = () => {
         </div>
       </section>
 
+      {/* Tool Logos Section */}
+      <section className="py-12 bg-muted border-y border-border">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <ToolLogos variant="light" />
+        </div>
+      </section>
+
       {/* Learning Outcomes */}
-      <section className="section-padding bg-muted">
+      <section className="section-padding bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -215,7 +236,7 @@ const Course = () => {
       </section>
 
       {/* Target Audience */}
-      <section className="section-padding bg-background">
+      <section className="section-padding bg-muted">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
@@ -239,6 +260,34 @@ const Course = () => {
                 <p className="text-muted-foreground text-sm">{audience.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Who This Is NOT For */}
+      <section className="section-padding bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-2xl mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
+                Who This Is <span className="text-destructive">NOT</span> For
+              </h2>
+              <p className="text-muted-foreground">
+                We want to be upfront — this course isn't right for everyone.
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              {notForAudience.map((item, index) => (
+                <div 
+                  key={index} 
+                  className="flex items-start gap-3 p-4 rounded-xl bg-destructive/5 border border-destructive/20"
+                >
+                  <XCircle className="w-5 h-5 text-destructive shrink-0 mt-0.5" />
+                  <span className="text-foreground">{item}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
