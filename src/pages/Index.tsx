@@ -44,18 +44,8 @@ const Index = () => {
     <Layout>
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center bg-primary overflow-hidden">
-        {/* Background Image */}
-        <div 
-          className="absolute inset-0 opacity-30"
-          style={{
-            backgroundImage: `url(${heroBg})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        />
-        
-        {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/85 to-primary/70" />
+        {/* Solid Background - No ghost text */}
+        <div className="absolute inset-0 bg-primary" />
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
