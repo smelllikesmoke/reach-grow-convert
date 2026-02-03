@@ -100,7 +100,7 @@ const Index = () => {
 
             {/* Right - Video Box */}
             <div className="relative animate-fade-in">
-              <div className="aspect-video rounded-2xl bg-card/10 border border-white/10 overflow-hidden shadow-2xl">
+              <div className="aspect-[3/4] max-w-sm mx-auto rounded-2xl bg-card/10 border border-white/10 overflow-hidden shadow-2xl">
                 <video
                   src={introVideo}
                   autoPlay
