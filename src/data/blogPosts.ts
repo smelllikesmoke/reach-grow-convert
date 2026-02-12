@@ -34,7 +34,7 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
-    id: 2,
+    id: 1,
     slug: "is-digital-marketing-good-career-2025",
     title: "Is Digital Marketing a Good Career in 2025? Salary, Skills, and Growth",
     excerpt:
@@ -129,7 +129,7 @@ Don’t let a lack of experience stop you. We have the roadmap, the mentorship, 
 
 **Ready to launch your new career?**
 [Enroll Now in the Digital Marketing Masterclass and Save 40%]`,
-    author: "Marcus Reynolds",
+    author: "Saad Mohsin",
     date: "February 12, 2026",
     readTime: "6 min read",
     category: "Career",
