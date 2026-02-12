@@ -126,10 +126,7 @@ The year 2025 is shaping up to be a pivotal year for the digital economy. The co
 
 You have a choice. You can stay in your current role, wondering "what if," or you can take the first step toward a career that offers a $65k+ starting salary, creative freedom, and the ability to work from anywhere.
 
-Don’t let a lack of experience stop you. We have the roadmap, the mentorship, and the tools to get you there.
-
-**Ready to launch your new career?**
-[Enroll Now in the Digital Marketing Masterclass and Save 40%]`,
+Don’t let a lack of experience stop you. We have the roadmap, the mentorship, and the tools to get you there.`,
     author: "Saad Mohsin",
     date: "February 12, 2026",
     readTime: "6 min read",
