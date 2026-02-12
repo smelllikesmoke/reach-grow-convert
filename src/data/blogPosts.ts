@@ -1,3 +1,6 @@
+import blogAgency from "@/assets/blog-agency.jpg";
+import blogTools from "@/assets/blog-tools.jpg";
+
 // =============================================
 // 📝 HOW TO MODIFY BLOG CONTENT:
 //
@@ -348,7 +351,7 @@ Starting a digital marketing agency from scratch is a marathon, not a sprint. By
     date: "March 1, 2026",
     readTime: "9 min read",
     category: "Entrepreneurship",
-    image: "",
+    image: blogAgency,
     keywords: [
       "Digital Marketing Agency",
       "Freelance Strategist",
@@ -520,7 +523,7 @@ That is how you move from beginner to professional in digital marketing.`,
     date: "February 12, 2026",
     readTime: "7 min read",
     category: "Tools & Resources",
-    image: "",
+    image: blogTools,
     keywords: [
       "digital marketing tools",
       "online marketing platforms",
