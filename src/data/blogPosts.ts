@@ -192,7 +192,7 @@ If you are looking for a search engine optimizer to join your team or act as a c
 Ranking on the first page of Google is not a one-time event but an ongoing relationship. By focusing on small business seo and ensuring your google page speeds are lightning fast you are already ahead of the competition. Whether you handle it yourself or hire a search engine optimization company the goal remains the same. You want to provide so much value that Google has no choice but to put you at the top.
 
 The intersection of seo digital marketing and human-centric content is where the magic happens. Keep track of your site ranking but don't let the numbers distract you from the people behind the screens. At the end of the day search engine optimization is just about making it easier for your future customers to find the help they need.`,
-    author: "Marcus Reynolds",
+    author: "Bilal Rasheed",
     date: "February 12, 2026",
     readTime: "8 min read",
     category: "SEO",
@@ -250,7 +250,7 @@ On the other hand if you provide a specialized legal service you will likely fin
 In the end the best approach is rarely choosing one over the other. The most successful modern brands use an omnichannel strategy. They use social media advertising to stay top of mind and build a story around their brand. Then they use paid search advertising to ensure they are the first result when that nurtured audience is finally ready to make a purchase.
 
 Understanding what is social media advertising and how it differs from the search experience is the first step toward a profitable year. Whether you manage your own ad campaign social media efforts or hire a team to handle your paid search advertising the goal remains the same. You want to be where your customers are with the right message at the perfect time.`,
-    author: "Marcus Reynolds",
+    author: "Saif Ul Haq",
     date: "February 12, 2026",
     readTime: "7 min read",
     category: "Paid Advertising",
