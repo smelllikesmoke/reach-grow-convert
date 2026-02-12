@@ -136,7 +136,13 @@ Don’t let a lack of experience stop you. We have the roadmap, the mentorship, 
     category: "Career",
     image:
       "https://cdn.discordapp.com/attachments/1466839527820886026/1471526702407618692/image.png?ex=698f4189&is=698df009&hm=bc2f5a067706ce41a02190a2382824c69c604bd5fbd1ab8c45d524f2585688ff&",
-    keywords: ["Digital Marketing Career", "Marketing Salary", "SEO Skills", "Freelance Marketing", "Career Change"],
+    keywords: [
+      "Digital Marketing Career",
+      "Digital Marketing Jobs",
+      "Is digital marketing a good career",
+      "Freelance digital marketing",
+      "Digital marketing salary",
+    ],
   },
   {
     id: 2,
