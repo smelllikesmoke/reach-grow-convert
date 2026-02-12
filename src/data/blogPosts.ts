@@ -30,6 +30,7 @@ export interface BlogPost {
   readTime: string;
   category: string;
   image: string;
+  keywords: string[];
 }
 
 export const blogPosts: BlogPost[] = [
@@ -135,6 +136,7 @@ Don’t let a lack of experience stop you. We have the roadmap, the mentorship, 
     category: "Career",
     image:
       "https://cdn.discordapp.com/attachments/1466839527820886026/1471526702407618692/image.png?ex=698f4189&is=698df009&hm=bc2f5a067706ce41a02190a2382824c69c604bd5fbd1ab8c45d524f2585688ff&",
+    keywords: ["Digital Marketing Career", "Marketing Salary", "SEO Skills", "Freelance Marketing", "Career Change"],
   },
   {
     id: 2,
@@ -174,6 +176,7 @@ The businesses that treat social media as a measurable marketing channel—not j
     readTime: "6 min read",
     category: "Social Media",
     image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=400&fit=crop",
+    keywords: ["Social Media ROI", "Analytics", "UTM Tracking", "Attribution", "KPIs"],
   },
   {
     id: 3,
@@ -204,6 +207,7 @@ Even with automated bidding strategies, you need to monitor performance regularl
     readTime: "7 min read",
     category: "Paid Ads",
     image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&h=400&fit=crop",
+    keywords: ["Google Ads", "PPC", "Negative Keywords", "Landing Pages", "Ad Copy"],
   },
   {
     id: 4,
@@ -245,6 +249,7 @@ Start with just the welcome sequence, measure results, then add more automations
     readTime: "9 min read",
     category: "Email Marketing",
     image: "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=800&h=400&fit=crop",
+    keywords: ["Email Automation", "Welcome Sequence", "Nurture Emails", "Drip Campaigns", "Email ROI"],
   },
   {
     id: 5,
@@ -298,5 +303,6 @@ Track metrics that connect to business outcomes:
     readTime: "7 min read",
     category: "Content Marketing",
     image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&h=400&fit=crop",
+    keywords: ["Content Strategy", "Buyer Journey", "Content Calendar", "Repurposing", "Lead Generation"],
   },
 ];

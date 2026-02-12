@@ -68,7 +68,12 @@ const BlogPost = () => {
               <ArrowLeft className="w-4 h-4 mr-2" /> Back to Blog
             </Button>
           </Link>
-          <Badge className="bg-gold/20 text-gold border-gold/30 mb-4">{post.category}</Badge>
+          <div className="flex flex-wrap items-center gap-2 mb-4">
+            <Badge className="bg-gold/20 text-gold border-gold/30">{post.category}</Badge>
+            {post.keywords?.map((kw) => (
+              <span key={kw} className="text-xs text-primary-foreground/50 border border-primary-foreground/20 rounded-full px-2.5 py-0.5">{kw}</span>
+            ))}
+          </div>
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary-foreground mb-4 leading-tight">
             {post.title}
           </h1>
