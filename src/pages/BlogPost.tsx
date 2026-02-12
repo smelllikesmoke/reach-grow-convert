@@ -4,6 +4,53 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Clock, User } from "lucide-react";
 import { blogPosts } from "@/data/blogPosts";
+import React from "react";
+
+/** Simple markdown-ish renderer: headings, bold, lists, paragraphs */
+const renderContent = (content: string) => {
+  const lines = content.split("\n");
+  const elements: React.ReactNode[] = [];
+  let key = 0;
+
+  const parseLine = (text: string) => {
+    // Bold
+    const parts = text.split(/\*\*(.*?)\*\*/g);
+    if (parts.length === 1) return text;
+    return parts.map((part, i) =>
+      i % 2 === 1 ? <strong key={i} className="font-semibold text-foreground">{part}</strong> : part
+    );
+  };
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    const trimmed = line.trim();
+
+    if (!trimmed) continue; // skip blank lines (spacing handled by gap)
+
+    // Headings
+    if (trimmed.startsWith("### ")) {
+      elements.push(<h3 key={key++} className="text-lg font-bold text-foreground mt-6 mb-2">{parseLine(trimmed.slice(4))}</h3>);
+    } else if (trimmed.startsWith("## ")) {
+      elements.push(<h2 key={key++} className="text-xl sm:text-2xl font-bold text-foreground mt-8 mb-3">{parseLine(trimmed.slice(3))}</h2>);
+    } else if (trimmed.startsWith("# ")) {
+      elements.push(<h1 key={key++} className="text-2xl sm:text-3xl font-bold text-foreground mt-8 mb-3">{parseLine(trimmed.slice(2))}</h1>);
+    }
+    // Unordered list
+    else if (trimmed.startsWith("- ") || trimmed.startsWith("• ")) {
+      elements.push(<li key={key++} className="ml-6 list-disc text-foreground/80">{parseLine(trimmed.slice(2))}</li>);
+    }
+    // Numbered list (e.g. "1. ")
+    else if (/^\d+\.\s/.test(trimmed)) {
+      elements.push(<li key={key++} className="ml-6 list-decimal text-foreground/80">{parseLine(trimmed.replace(/^\d+\.\s/, ""))}</li>);
+    }
+    // Regular paragraph
+    else {
+      elements.push(<p key={key++} className="text-foreground/80">{parseLine(trimmed)}</p>);
+    }
+  }
+
+  return elements;
+};
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -43,8 +90,8 @@ const BlogPost = () => {
       {/* Content */}
       <article className="py-12 sm:py-16">
         <div className="container mx-auto px-4 max-w-3xl">
-          <div className="prose prose-lg max-w-none text-foreground/80 leading-relaxed whitespace-pre-line">
-            {post.content}
+          <div className="prose prose-lg max-w-none leading-relaxed flex flex-col gap-4">
+            {renderContent(post.content)}
           </div>
 
           {/* CTA */}
