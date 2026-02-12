@@ -133,7 +133,8 @@ Don’t let a lack of experience stop you. We have the roadmap, the mentorship, 
     date: "February 12, 2026",
     readTime: "6 min read",
     category: "Career",
-    image: "",
+    image:
+      "https://cdn.discordapp.com/attachments/1466839527820886026/1471526702407618692/image.png?ex=698f4189&is=698df009&hm=bc2f5a067706ce41a02190a2382824c69c604bd5fbd1ab8c45d524f2585688ff&",
   },
   {
     id: 2,
