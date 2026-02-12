@@ -196,7 +196,7 @@ The intersection of seo digital marketing and human-centric content is where the
     date: "February 12, 2026",
     readTime: "8 min read",
     category: "SEO",
-    image: "",
+    image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&h=400&fit=crop",
     keywords: [
       "website ranking",
       "search engine optimization",
